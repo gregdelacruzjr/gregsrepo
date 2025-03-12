@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Web Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background: #012352;
+        color: white;
+      }
+      .container {
+        width: 70%;
+        background: white;
+        color: rgb(0, 0, 0);
+      }
+      .myheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #1f2937;
+        color: white;
+      }
+      nav {
+        display: flex;
+        gap: 1rem;
+      }
+
+      a {
+        color: #3cd5e9;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 3rem;
+        background: #4f637e;
+        color: white;
+      }
+      .hero-text {
+        max-width: 50%;
+      }
+      .hero button {
+        background: #3cd5e9;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+      .image-placeholder {
+        background: gray;
+        width: 50%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .info-section {
+        text-align: center;
+        padding: 3rem 2rem;
+      }
+      .info-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .info-box {
+        border: 2px solid #3882f6;
+        padding: 1rem;
+        width: 110px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 12px;
+      }
+      .quote-section {
+        background: #e5e7eb;
+        color: black;
+        text-align: center;
+        font-style: italic;
+        padding: 3rem 2rem;
+      }
+      .cta-section {
+        background: #3882f6;
+        text-align: center;
+        padding: 2rem;
+        margin: 2rem;
+        color: white;
+        border-radius: 8px;
+      }
+      .cta-section button {
+        background: white;
+        color: #3882f6;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #1f2937;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="myheader">
+        <h1>Header Logo</h1>
+        <nav>
+          <a href="#">header link one</a>
+          <a href="#">header link two</a>
+          <a href="#">header link three</a>
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="hero-text">
+          <h2>This website is awesome</h2>
+          <p>
+            This website has some subtext that goes here under the main title.
+            It's a smaller font and the color is lower contrast.
+          </p>
+          <button class="hero button">Sign up</button>
+        </div>
+        <div class="image-placeholder">this is a placeholder for an image</div>
+      </section>
+      <section class="info-section">
+        <h3>Some random information.</h3>
+        <div class="info-container">
+          <div class="info-box">
+            this is some subtext under an illustration or image
+          </div>
+          <div class="info-box">
+            this is some subtext under an illustration or image
+          </div>
+          <div class="info-box">
+            this is some subtext under an illustration or image
+          </div>
+          <div class="info-box">
+            this is some subtext under an illustration or image
+          </div>
+        </div>
+      </section>
+      <section class="quote-section">
+        <p>
+          "This is an inspiring quote, or a testimonial from a customer. Maybe
+          it's just filling up space, or maybe people will actually read it. Who
+          knows? All I know is that it looks nice."
+        </p>
+        <p><strong>-Thor, God of Thunder</strong></p>
+      </section>
+      <section class="cta-section">
+        <h3>Call to action! It's time!</h3>
+        <p>Sign up for our product by clicking that button right over there!</p>
+        <button>Sign up</button>
+      </section>
+      <footer>
+        <p>Copyright © The Odin Project 2021</p>
+      </footer>
+    </div>
+  </body>
+</html>
